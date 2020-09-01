@@ -12,7 +12,7 @@ export default () => {
           alt="logo"
         />
         <View className={styles.text}>
-          <Text>请选择你的</Text>
+          <Text>请选择你的菜品</Text>
         </View>
       </View>
     </View>
