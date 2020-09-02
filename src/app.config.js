@@ -12,8 +12,8 @@ module.exports.wechat = {
   pages,
   window: {
     navigationBarTitleText: 'Order Manage',
-    navigationBarBackgroundColor: '#fff',
-    navigationBarTextStyle: 'black',
+    navigationBarBackgroundColor: '#be1c17',
+    navigationBarTextStyle: 'white',
   },
 };
 
