@@ -17,6 +17,7 @@
     "remax": "^2.7.7"
   },
   "devDependencies": {
+    "@remax/plugin-less": "^1.0.0",
     "cross-env": "^7.0.2"
   }
 }
