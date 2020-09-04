@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Image, Text } from 'remax/one';
+import { View, Image, Text, Button } from 'remax/one';
 import './index.less';
 
 const data = [
@@ -54,7 +54,7 @@ const Card = () => {
         <View className="card-item">
           <View className="card-item-left">
             <Image
-              src="/images/icon.png"
+              src="/images/1.jpg"
               className="card-item-img"
               mode="widthFix"
             ></Image>
@@ -62,14 +62,11 @@ const Card = () => {
           <View className="card-item-right">
             <View className="card-item-title">{v.label}</View>
             <View className="card-item-desc">desc</View>
-            <View className="price-box">
-              <text className="price">price</text>
-              <text className="num">xnum</text>
+            <View className=".card-item-price-box">
+              <Text className=".card-item-price">¥212</Text>
+              <Text className=".card-item-num">x2</Text>
             </View>
-            <View className="illustrate">
-              <text>支持7天无理由退货</text>
-              <a className="more">价格说明</a>
-            </View>
+            <Button className="card-item-button">+</Button>
           </View>
         </View>
       ))}

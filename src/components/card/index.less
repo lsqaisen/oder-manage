@@ -8,8 +8,19 @@
   height: 100vh;
 
   .card-item {
+    position: relative;
     display: flex;
     padding: 16px;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      bottom: 1px;
+      left: 16px;
+      width: calc(100% - 32px);
+      height: 0;
+      border-bottom: 2px solid #e0e0e0;
+    }
 
     .card-item-left {
       flex: 0 0 6rem;
@@ -21,6 +32,7 @@
     }
 
     .card-item-right {
+      position: relative;
       flex: 1;
 
       .card-item-title {
@@ -29,57 +41,44 @@
       }
 
       .card-item-desc {
-        font-size: .8rem;
+        font-size: .9rem;
         text-overflow: ellipsis;
         color: #7a7a7a;
         margin-top: 5px;
+      }
+
+      .card-item-price-box {
+        margin-top: 5px;
+        margin-right: 3rem;
+
+        .card-item-price {
+          font-size: 1rem;
+          color: #be1c17;
+        }
+
+        .card-item-num {
+          font-size: 1rem;
+          float: right;
+        }
+      }
+
+      .card-item-button {
+        position: absolute;
+        padding: 0;
+        right: 0;
+        top: 50%;
+        margin-top: -1rem;
+        height: 2rem;
+        width: 2rem;
+        line-height: 2rem;
+        border-radius: 2rem;
+        background-color: #be1c17;
+        color: #fff;
       }
     }
   }
 }
 
-.list-group {
-  display: flex;
-  padding: 5px 10px;
-}
-
-
-.list-left {
-  flex: 0 0 100px;
-}
-
-.list-right {
-  flex: 1;
-}
-
-.title {
-  font-size: 16px;
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
-}
-
-.desc {
-  font-size: 14px;
-  color: #7a7a7a;
-  margin-top: 5px;
-}
-
-.price-box {
-  margin-top: 5px;
-}
-
-.price {
-  font-size: 14px;
-  color: red;
-}
-
-.num {
-  font-size: 14px;
-  float: right;
-}
 
 .illustrate {
   font-size: 14px;
