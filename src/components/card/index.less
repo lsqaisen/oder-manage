@@ -1,0 +1,93 @@
+:host {
+  display: block;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card-box {
+  overflow: scroll;
+  height: 100vh;
+
+  .card-item {
+    display: flex;
+    padding: 16px;
+
+    .card-item-left {
+      flex: 0 0 6rem;
+
+      .card-item-img {
+        margin-right: 24px;
+        width: calc(100% - 24px);
+      }
+    }
+
+    .card-item-right {
+      flex: 1;
+
+      .card-item-title {
+        font-size: 1rem;
+        text-overflow: ellipsis;
+      }
+
+      .card-item-desc {
+        font-size: .8rem;
+        text-overflow: ellipsis;
+        color: #7a7a7a;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.list-group {
+  display: flex;
+  padding: 5px 10px;
+}
+
+
+.list-left {
+  flex: 0 0 100px;
+}
+
+.list-right {
+  flex: 1;
+}
+
+.title {
+  font-size: 16px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.desc {
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-top: 5px;
+}
+
+.price-box {
+  margin-top: 5px;
+}
+
+.price {
+  font-size: 14px;
+  color: red;
+}
+
+.num {
+  font-size: 14px;
+  float: right;
+}
+
+.illustrate {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #7a7a7a;
+}
+
+.more {
+  float: right;
+  color: rgb(67, 197, 230);
+}

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { View, Text, Image } from 'remax/one';
-import ClassMenu from '@/components/class_menu/';
+import Menu from '@/components/menu';
+import Card from '@/components/card';
 import styles from './index.less';
 
 export default () => {
@@ -14,7 +15,10 @@ export default () => {
         />
       </View> */}
       <View className={styles.menu}>
-        <ClassMenu />
+        <Menu />
+      </View>
+      <View className={styles.content}>
+        <Card />
       </View>
     </View>
   );

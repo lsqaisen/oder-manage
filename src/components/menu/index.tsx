@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Button, Text } from 'remax/one';
+import { View, Navigator, Text } from 'remax/one';
 import './index.less';
 
 const data = [
@@ -47,17 +47,20 @@ const data = [
 ];
 
 const ClassMenu = () => {
+  // return <Button>test</Button>;
   return (
-    <View className="class-menus">
+    <View className="class-menu">
       {data.map((v) => (
-        <Button
-          className={`class-menu-label ${
-            v.value === '5' ? 'class-menu-selected' : ''
+        <Navigator
+          className={`class-menu-item ${
+            v.value === '5' ? 'class-menu-item-selected' : ''
           }`}
           key={v.value}
+          url="#"
+          action="navigate"
         >
           {v.label}
-        </Button>
+        </Navigator>
       ))}
     </View>
   );
