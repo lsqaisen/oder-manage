@@ -2,11 +2,15 @@ import * as React from 'react';
 import { View, Text, Image } from 'remax/one';
 import Menu from '@/components/menu';
 import Card from '@/components/card';
-import styles from './index.less';
+import Header from '@/components/header/';
+import './index.less';
 
 export default () => {
   return (
-    <View className={styles.app}>
+    <View className="app">
+      <View className="header">
+        <Header />
+      </View>
       {/* <Image className={styles.bg} src="/images/bg.jpg" /> */}
       {/* <View className={styles.header}>
         <Image
@@ -14,10 +18,10 @@ export default () => {
           className={styles.logo}
         />
       </View> */}
-      <View className={styles.menu}>
+      <View className="menu">
         <Menu />
       </View>
-      <View className={styles.content}>
+      <View className="content">
         <Card />
       </View>
     </View>
